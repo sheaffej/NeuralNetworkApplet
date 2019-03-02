@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.0'?>
+<oma:artifact xmlns:oma="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="NeuralNet" type="UMLPackage" cid="6fb2c9a2-00f1-1000-8001-c0a8010ae2b8::NeuralNet::UMLPackage">
+   <oma:property>
+      <oma:cid name="NAMESPACE_REFERENCE" key="1000::::UMLContainer"/>
+      <oma:null name="COMMENT"/>
+   </oma:property>
+   <oma:backreference/>
+   <oma:children/>
+</oma:artifact>

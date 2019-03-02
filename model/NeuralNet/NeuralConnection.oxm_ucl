@@ -1,0 +1,278 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.0'?>
+<artifact xmlns="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="NeuralConnection" type="UMLClass" cid="8f22e59f-00f1-1000-8001-c0a8016f5b6b::NeuralNet.NeuralConnection::UMLClass">
+   <property>
+      <cid name="NAMESPACE_REFERENCE" key="6fb2c9a2-00f1-1000-8001-c0a8010ae2b8::NeuralNet::UMLPackage"/>
+      <text name="COMMENT">The NeuralConnection class represents a connection between
+two Neurons.  The class simply stores a reference to the
+connected Neurons and provides accessor methods so each
+Neuron can retrieve a reference to the other Neuron.
+</text>
+      <text name="IS_ABSTRACT">FALSE</text>
+      <text name="IS_LEAF">FALSE</text>
+      <text name="IS_ROOT">FALSE</text>
+      <text name="VISIBILITY">PUBLIC</text>
+      <text name="CODE_SYNC_STATE">SYNCHRONIZED</text>
+      <text name="java.lang.JavaStrictFP">FALSE</text>
+      <text name="java.lang.JavaStatic">FALSE</text>
+      <text name="IS_ACTIVE">FALSE</text>
+   </property>
+   <backreference/>
+   <children>
+      <child type="ClassifierGeneralization" reference="SUBTYPE_REFERENCE">
+         <artifact name="" type="ClassifierGeneralization" cid="8f230617-00f1-1000-8002-c0a8016f5b6b::NeuralNet.NeuralConnection::ClassifierGeneralization">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <number name="SEQUENCE" value="0"/>
+               <null name="DISCRIMINATOR"/>
+               <cid name="SUPERTYPE_REFERENCE" key="::java.lang.Object::UMLClass"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+      </child>
+      <child type="UMLAttribute" reference="CLASSIFIER_REFERENCE">
+         <artifact name="index" type="UMLAttribute" cid="8fde4d8c-00f1-1000-8002-c0a8016ffb58::NeuralNet.NeuralConnection::UMLAttribute">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PACKAGE</text>
+               <text name="OWNER_SCOPE">CLASSIFIER</text>
+               <text name="CHANGEABILITY">CHANGEABLE</text>
+               <text name="MULTIPLICITY">1</text>
+               <null name="TARGET_SCOPE"/>
+               <text name="INITIAL_VALUE">0</text>
+               <cid name="CLASSIFIER_TYPE_REFERENCE" key="::int::UMLInterface"/>
+               <null name="SEQUENCE"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaVolatile">FALSE</text>
+               <text name="java.lang.JavaTransient">FALSE</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="weight" type="UMLAttribute" cid="8f2438d2-00f1-1000-8003-c0a8016f5b6b::NeuralNet.NeuralConnection::UMLAttribute">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PROTECTED</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="CHANGEABILITY">CHANGEABLE</text>
+               <text name="MULTIPLICITY">1</text>
+               <null name="TARGET_SCOPE"/>
+               <null name="INITIAL_VALUE"/>
+               <cid name="CLASSIFIER_TYPE_REFERENCE" key="::double::UMLInterface"/>
+               <null name="SEQUENCE"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaVolatile">FALSE</text>
+               <text name="java.lang.JavaTransient">FALSE</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="inputNeuron" type="UMLAttribute" cid="8f2438d2-00f1-1000-8004-c0a8016f5b6b::NeuralNet.NeuralConnection::UMLAttribute">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PROTECTED</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="CHANGEABILITY">CHANGEABLE</text>
+               <text name="MULTIPLICITY">1</text>
+               <null name="TARGET_SCOPE"/>
+               <null name="INITIAL_VALUE"/>
+               <cid name="CLASSIFIER_TYPE_REFERENCE" key="::NeuralNet.Neuron::UMLInterface"/>
+               <null name="SEQUENCE"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaVolatile">FALSE</text>
+               <text name="java.lang.JavaTransient">FALSE</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="outputNeuron" type="UMLAttribute" cid="8f2438d2-00f1-1000-8005-c0a8016f5b6b::NeuralNet.NeuralConnection::UMLAttribute">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PROTECTED</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="CHANGEABILITY">CHANGEABLE</text>
+               <text name="MULTIPLICITY">1</text>
+               <null name="TARGET_SCOPE"/>
+               <null name="INITIAL_VALUE"/>
+               <cid name="CLASSIFIER_TYPE_REFERENCE" key="::NeuralNet.Neuron::UMLInterface"/>
+               <null name="SEQUENCE"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaVolatile">FALSE</text>
+               <text name="java.lang.JavaTransient">FALSE</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+      </child>
+      <child type="BehavioralFeature" reference="CLASSIFIER_REFERENCE">
+         <artifact name="getInputNeuron" type="UMLOperation" cid="8f2972c3-00f1-1000-800c-c0a8016f5b6b::NeuralNet.NeuralConnection::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::NeuralNet.Neuron::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="getOutputNeuron" type="UMLOperation" cid="8f2972c3-00f1-1000-800d-c0a8016f5b6b::NeuralNet.NeuralConnection::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::NeuralNet.Neuron::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="NeuralConnection" type="UMLOperation" cid="8f512b4a-00f1-1000-8029-c0a8016f5b6b::NeuralNet.NeuralConnection::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <null name="RETURN_CLASSIFIER_REFERENCE"/>
+               <null name="java.lang.JavaDimensions"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="in" type="Parameter" cid="8f512b4a-00f1-1000-802a-c0a8016f5b6b::NeuralNet.NeuralConnection::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::NeuralNet.Neuron::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+                  <artifact name="out" type="Parameter" cid="8f512b4a-00f1-1000-802b-c0a8016f5b6b::NeuralNet.NeuralConnection::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::NeuralNet.Neuron::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="20"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+                  <artifact name="rand" type="Parameter" cid="8f512b4a-00f1-1000-802c-c0a8016f5b6b::NeuralNet.NeuralConnection::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::java.util.Random::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="30"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+         <artifact name="setWeight" type="UMLOperation" cid="8f29decf-00f1-1000-800f-c0a8016f5b6b::NeuralNet.NeuralConnection::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::void::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="newWeight" type="Parameter" cid="8f29decf-00f1-1000-8010-c0a8016f5b6b::NeuralNet.NeuralConnection::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::double::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+         <artifact name="getWeight" type="UMLOperation" cid="8f2972c3-00f1-1000-800e-c0a8016f5b6b::NeuralNet.NeuralConnection::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::double::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+      </child>
+   </children>
+</artifact>

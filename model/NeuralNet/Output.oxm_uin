@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.0'?>
+<artifact xmlns="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="Output" type="UMLInterface" cid="6ffef199-00f1-1000-805e-c0a8010ae2b8::NeuralNet.Output::UMLInterface">
+   <property>
+      <cid name="NAMESPACE_REFERENCE" key="6fb2c9a2-00f1-1000-8001-c0a8010ae2b8::NeuralNet::UMLPackage"/>
+      <text name="COMMENT">The Output interface defines the basic methods that a Sample must
+have to be used as an output of the NeuralNetwork.
+</text>
+      <text name="IS_ABSTRACT">FALSE</text>
+      <text name="IS_LEAF">FALSE</text>
+      <text name="IS_ROOT">TRUE</text>
+      <text name="VISIBILITY">PUBLIC</text>
+      <text name="CODE_SYNC_STATE">SYNCHRONIZED</text>
+      <text name="java.lang.JavaStrictFP">FALSE</text>
+      <text name="java.lang.JavaStatic">FALSE</text>
+   </property>
+   <backreference>
+      <reference type="ClassifierGeneralization" property="SUPERTYPE_REFERENCE" ownedCid="7086984a-00f1-1000-8065-c0a8010a8eaf::NeuralNet.Sample::ClassifierGeneralization" ownerCid="700028ca-00f1-1000-8064-c0a8010ae2b8::NeuralNet.Sample::UMLInterface"/>
+   </backreference>
+   <children>
+      <child type="BehavioralFeature" reference="CLASSIFIER_REFERENCE">
+         <artifact name="getOutput" type="UMLOperation" cid="6fff61f2-00f1-1000-8062-c0a8010ae2b8::NeuralNet.Output::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::double::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="1"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">TRUE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="setOutput" type="UMLOperation" cid="6fff165e-00f1-1000-805f-c0a8010ae2b8::NeuralNet.Output::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="5::::Datatype"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">TRUE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="output" type="Parameter" cid="6fff3134-00f1-1000-8060-c0a8010ae2b8::NeuralNet.Output::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="7::::Datatype"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="0"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="1"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+         <artifact name="setOutput" type="UMLOperation" cid="769be0a2-00f1-1000-8001-c0a8010a9f73::NeuralNet.Output::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::void::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">TRUE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="output" type="Parameter" cid="769be0ac-00f1-1000-8002-c0a8010a9f73::NeuralNet.Output::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::double::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="1"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+      </child>
+   </children>
+</artifact>

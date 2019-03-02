@@ -1,0 +1,479 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.0'?>
+<artifact xmlns="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="NeuralNetSampleSet" type="UMLClass" cid="860680cc-00f1-1000-8004-7f0000016e67::NeuralNet.NeuralNetSampleSet::UMLClass">
+   <property>
+      <cid name="NAMESPACE_REFERENCE" key="6fb2c9a2-00f1-1000-8001-c0a8010ae2b8::NeuralNet::UMLPackage"/>
+      <text name="COMMENT">The NeuralNetSampleSet class is simply a linked list of
+NeuralNetSample objects.  This class also contains the logic
+to load the samples from the data file, and randomly extract a
+portion of the samples into a separate NeuralNetSampleSet.
+</text>
+      <text name="IS_ABSTRACT">FALSE</text>
+      <text name="IS_LEAF">FALSE</text>
+      <text name="IS_ROOT">FALSE</text>
+      <text name="VISIBILITY">PUBLIC</text>
+      <text name="CODE_SYNC_STATE">SYNCHRONIZED</text>
+      <text name="java.lang.JavaStrictFP">FALSE</text>
+      <text name="java.lang.JavaStatic">FALSE</text>
+      <text name="IS_ACTIVE">FALSE</text>
+   </property>
+   <backreference/>
+   <children>
+      <child type="ClassifierGeneralization" reference="SUBTYPE_REFERENCE">
+         <artifact name="" type="ClassifierGeneralization" cid="8606a483-00f1-1000-8005-7f0000016e67::NeuralNet.NeuralNetSampleSet::ClassifierGeneralization">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <number name="SEQUENCE" value="0"/>
+               <null name="DISCRIMINATOR"/>
+               <cid name="SUPERTYPE_REFERENCE" key="::java.lang.Object::UMLClass"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+      </child>
+      <child type="UMLAttribute" reference="CLASSIFIER_REFERENCE">
+         <artifact name="applet" type="UMLAttribute" cid="f4fecd8f-00f1-1000-8011-0a2d1d034048::NeuralNet.NeuralNetSampleSet::UMLAttribute">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PROTECTED</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="CHANGEABILITY">CHANGEABLE</text>
+               <text name="MULTIPLICITY">1</text>
+               <null name="TARGET_SCOPE"/>
+               <null name="INITIAL_VALUE"/>
+               <cid name="CLASSIFIER_TYPE_REFERENCE" key="::NeuralNet.NeuralNetApplet::UMLInterface"/>
+               <null name="SEQUENCE"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaVolatile">FALSE</text>
+               <text name="java.lang.JavaTransient">FALSE</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="set" type="UMLAttribute" cid="86094167-00f1-1000-800e-7f0000016e67::NeuralNet.NeuralNetSampleSet::UMLAttribute">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PROTECTED</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="CHANGEABILITY">CHANGEABLE</text>
+               <text name="MULTIPLICITY">1</text>
+               <null name="TARGET_SCOPE"/>
+               <null name="INITIAL_VALUE"/>
+               <cid name="CLASSIFIER_TYPE_REFERENCE" key="::java.util.LinkedList::UMLInterface"/>
+               <null name="SEQUENCE"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaVolatile">FALSE</text>
+               <text name="java.lang.JavaTransient">FALSE</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+      </child>
+      <child type="BehavioralFeature" reference="CLASSIFIER_REFERENCE">
+         <artifact name="extractTestSet" type="UMLOperation" cid="f4fecd8f-00f1-1000-800d-0a2d1d034048::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::NeuralNet.NeuralNetSampleSet::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="percent" type="Parameter" cid="f4fecd8f-00f1-1000-800e-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::int::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+         <artifact name="loadCSVDataFromFile" type="UMLOperation" cid="f4fecd8f-00f1-1000-800a-0a2d1d034048::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PRIVATE</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::void::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="maxsamples" type="Parameter" cid="f4fecd8f-00f1-1000-800c-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::int::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="20"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+                  <artifact name="url" type="Parameter" cid="f4fecd8f-00f1-1000-800b-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::java.net.URL::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+         <artifact name="NeuralNetSampleSet" type="UMLOperation" cid="f4fecd85-00f1-1000-8006-0a2d1d034048::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <null name="RETURN_CLASSIFIER_REFERENCE"/>
+               <null name="java.lang.JavaDimensions"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="a" type="Parameter" cid="f4fecd8f-00f1-1000-8009-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::NeuralNet.NeuralNetApplet::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="30"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+                  <artifact name="url" type="Parameter" cid="f4fecd85-00f1-1000-8007-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::java.net.URL::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+                  <artifact name="maxsamples" type="Parameter" cid="f4fecd85-00f1-1000-8008-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::int::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="20"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+         <artifact name="NeuralNetSampleSet" type="UMLOperation" cid="f4fecd7b-00f1-1000-8002-0a2d1d034048::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <null name="RETURN_CLASSIFIER_REFERENCE"/>
+               <null name="java.lang.JavaDimensions"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="a" type="Parameter" cid="f4fecd85-00f1-1000-8005-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::NeuralNet.NeuralNetApplet::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="30"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+                  <artifact name="datafile" type="Parameter" cid="f4fecd7b-00f1-1000-8003-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::java.io.File::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+                  <artifact name="maxsamples" type="Parameter" cid="f4fecd85-00f1-1000-8004-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::int::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="20"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+         <artifact name="setApplet" type="UMLOperation" cid="f4fecd8f-00f1-1000-800f-0a2d1d034048::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::void::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="a" type="Parameter" cid="f4fecd8f-00f1-1000-8010-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::NeuralNet.NeuralNetApplet::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+         <artifact name="NeuralNetSampleSet" type="UMLOperation" cid="861a3aad-00f1-1000-8011-7f0000016e67::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <null name="RETURN_CLASSIFIER_REFERENCE"/>
+               <null name="java.lang.JavaDimensions"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="get" type="UMLOperation" cid="8606e72c-00f1-1000-8008-7f0000016e67::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::NeuralNet.Sample::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="index" type="Parameter" cid="8606e72c-00f1-1000-8009-7f0000016e67::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::int::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+         <artifact name="getSize" type="UMLOperation" cid="8606e72c-00f1-1000-800a-7f0000016e67::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::int::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="clear" type="UMLOperation" cid="8606e72c-00f1-1000-800b-7f0000016e67::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::void::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="add" type="UMLOperation" cid="8606e72c-00f1-1000-800c-7f0000016e67::NeuralNet.NeuralNetSampleSet::UMLOperation">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <text name="VISIBILITY">PUBLIC</text>
+               <text name="OWNER_SCOPE">INSTANCE</text>
+               <text name="IS_QUERY">FALSE</text>
+               <null name="SEQUENCE"/>
+               <cid name="RETURN_CLASSIFIER_REFERENCE" key="::void::UMLInterface"/>
+               <number name="java.lang.JavaDimensions" value="0"/>
+               <text name="java.lang.JavaStrictFP">FALSE</text>
+               <text name="java.lang.JavaNative">FALSE</text>
+               <text name="IS_ABSTRACT">FALSE</text>
+               <text name="IS_LEAF">FALSE</text>
+               <text name="IS_ROOT">FALSE</text>
+               <text name="CONCURRENCY">SEQUENTIAL</text>
+            </property>
+            <backreference/>
+            <children>
+               <child type="Parameter" reference="OWNING_REFERENCE">
+                  <artifact name="sample" type="Parameter" cid="8606e72c-00f1-1000-800d-7f0000016e67::NeuralNet.NeuralNetSampleSet::Parameter">
+                     <property>
+                        <null name="NAMESPACE_REFERENCE"/>
+                        <null name="COMMENT"/>
+                        <cid name="CLASSIFIER_REFERENCE" key="::NeuralNet.Sample::UMLInterface"/>
+                        <null name="DEFAULT_VALUE"/>
+                        <number name="SEQUENCE" value="10"/>
+                        <text name="KIND">IN</text>
+                        <number name="java.lang.JavaDimensions" value="0"/>
+                        <text name="java.lang.JavaFinal">FALSE</text>
+                     </property>
+                     <backreference/>
+                     <children/>
+                  </artifact>
+               </child>
+            </children>
+         </artifact>
+      </child>
+      <child type="Realization" reference="CLASS_REFERENCE">
+         <artifact name="" type="Realization" cid="f4fecd3f-00f1-1000-8001-0a2d1d034048::NeuralNet.NeuralNetSampleSet::Realization">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <cid name="INTERFACE_REFERENCE" key="::java.io.Serializable::UMLInterface"/>
+               <number name="SEQUENCE" value="0"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+      </child>
+   </children>
+</artifact>

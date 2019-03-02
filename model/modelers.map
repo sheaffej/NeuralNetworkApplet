@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<ModelersMap class="java.util.HashMap">
+   <Item>
+      <Key>6fb2c9a2-00f1-1000-8001-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>6fb2cbe7-00f1-1000-8002-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.Class Diagram</Item>
+         <Item>oxd_otd</Item>
+         <Item>Diagram</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>6fb35dd1-00f1-1000-8003-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.NeuralNetwork</Item>
+         <Item/>
+         <Item>UMLInterface</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>6fbaf058-00f1-1000-8011-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.Neuron</Item>
+         <Item/>
+         <Item>UMLInterface</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>6fbbe332-00f1-1000-8012-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.SampleSet</Item>
+         <Item/>
+         <Item>UMLInterface</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>6fc2d6dd-00f1-1000-8047-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.Sample</Item>
+         <Item/>
+         <Item>UMLInterface</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>6fc73089-00f1-1000-8050-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.Input</Item>
+         <Item/>
+         <Item>UMLClass</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>6fc79e75-00f1-1000-8054-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.Input</Item>
+         <Item/>
+         <Item>UMLInterface</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>6fc87235-00f1-1000-8059-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.Dependency1</Item>
+         <Item/>
+         <Item>Dependency</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>6ffef199-00f1-1000-805e-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.Output</Item>
+         <Item/>
+         <Item>UMLInterface</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>700028ca-00f1-1000-8064-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.Sample</Item>
+         <Item/>
+         <Item>UMLInterface</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>7008cd1c-00f1-1000-8069-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.JavaClass1</Item>
+         <Item/>
+         <Item>UMLInterface</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>700b3653-00f1-1000-8072-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.NeuralNetworkImpl</Item>
+         <Item/>
+         <Item>UMLClass</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>70154c7a-00f1-1000-8143-c0a8010ae2b8</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.NeuralNetSample</Item>
+         <Item/>
+         <Item>UMLClass</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>707be899-00f1-1000-8026-c0a8010a8eaf</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>myPackage1</Item>
+         <Item/>
+         <Item>UMLPackage</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>707be8cb-00f1-1000-8027-c0a8010a8eaf</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>myPackage1.Class Diagram1</Item>
+         <Item>oxd_otd</Item>
+         <Item>Diagram</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>707bf455-00f1-1000-8028-c0a8010a8eaf</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>myPackage1.JavaClass1</Item>
+         <Item/>
+         <Item>UMLClass</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>707c03c9-00f1-1000-802b-c0a8010a8eaf</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>myPackage1.Interface1</Item>
+         <Item/>
+         <Item>UMLInterface</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>7096eb12-00f1-1000-803c-c0a8010a948d</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.InputNeuron</Item>
+         <Item/>
+         <Item>UMLClass</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>80aeeb4f-00f1-1000-8009-c0a8010aa7e6</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.SigmoidNeuron</Item>
+         <Item/>
+         <Item>UMLClass</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>860680cc-00f1-1000-8004-7f0000016e67</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.NeuralNetSampleSet</Item>
+         <Item/>
+         <Item>UMLClass</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>8f22e59f-00f1-1000-8001-c0a8016f5b6b</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.NeuralConnection</Item>
+         <Item/>
+         <Item>UMLClass</Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>f5140f18-00f1-1000-8025-0a2d1d034048</Key>
+      <Value class="[Ljava.lang.String;">
+         <Item>NeuralNet.NeuralNetWorkerThread</Item>
+         <Item/>
+         <Item>UMLClass</Item>
+      </Value>
+   </Item>
+</ModelersMap>

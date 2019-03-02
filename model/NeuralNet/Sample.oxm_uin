@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?Oracle-JDeveloper Artifact = '1.0'?>
+<artifact xmlns="http://xmlns.oracle.com/jdeveloper/modeler/artifact" name="Sample" type="UMLInterface" cid="700028ca-00f1-1000-8064-c0a8010ae2b8::NeuralNet.Sample::UMLInterface">
+   <property>
+      <cid name="NAMESPACE_REFERENCE" key="6fb2c9a2-00f1-1000-8001-c0a8010ae2b8::NeuralNet::UMLPackage"/>
+      <text name="COMMENT">The Sample interface extends both the Input and Ouput interfaces to
+provided a single object interface that has both Input and Output
+capabilities.
+</text>
+      <text name="IS_ABSTRACT">FALSE</text>
+      <text name="IS_LEAF">FALSE</text>
+      <text name="IS_ROOT">FALSE</text>
+      <text name="VISIBILITY">PUBLIC</text>
+      <text name="CODE_SYNC_STATE">SYNCHRONIZED</text>
+      <text name="java.lang.JavaStrictFP">FALSE</text>
+      <text name="java.lang.JavaStatic">FALSE</text>
+   </property>
+   <backreference>
+      <reference type="Realization" property="INTERFACE_REFERENCE" ownedCid="7086a691-00f1-1000-8066-c0a8010a8eaf::NeuralNet.NeuralNetSample::Realization" ownerCid="70154c7a-00f1-1000-8143-c0a8010ae2b8::NeuralNet.NeuralNetSample::UMLClass"/>
+   </backreference>
+   <children>
+      <child type="ClassifierGeneralization" reference="SUBTYPE_REFERENCE">
+         <artifact name="ClassifierGeneralization" type="ClassifierGeneralization" cid="7086984a-00f1-1000-8065-c0a8010a8eaf::NeuralNet.Sample::ClassifierGeneralization">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <number name="SEQUENCE" value="0"/>
+               <null name="DISCRIMINATOR"/>
+               <cid name="SUPERTYPE_REFERENCE" key="6ffef199-00f1-1000-805e-c0a8010ae2b8::NeuralNet.Output::UMLInterface"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+         <artifact name="ClassifierGeneralization" type="ClassifierGeneralization" cid="7086889a-00f1-1000-8064-c0a8010a8eaf::NeuralNet.Sample::ClassifierGeneralization">
+            <property>
+               <null name="NAMESPACE_REFERENCE"/>
+               <null name="COMMENT"/>
+               <number name="SEQUENCE" value="10"/>
+               <null name="DISCRIMINATOR"/>
+               <cid name="SUPERTYPE_REFERENCE" key="6fc79e75-00f1-1000-8054-c0a8010ae2b8::NeuralNet.Input::UMLInterface"/>
+            </property>
+            <backreference/>
+            <children/>
+         </artifact>
+      </child>
+   </children>
+</artifact>

@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<simple-archive-deployment xmlns="http://xmlns.oracle.com/jdeveloper/903/deploy/jar" nselem="simple-archive-deployment" class="oracle.jdeveloper.deploy.jar.ArchiveProfile">
+   <archiveOptions>
+      <additionalManifests/>
+      <compressed>true</compressed>
+      <hasManifest>true</hasManifest>
+      <mainClass>NeuralNet.NeuralNetApplet</mainClass>
+   </archiveOptions>
+   <cdaSettings>
+      <additionalArchives/>
+      <afterFilters/>
+      <beforeFilters/>
+      <duringFilters/>
+      <selectedArchives>
+         <archives>
+            <Item protocol="jar" path="file:/E:/JDev903/jdev/lib/jdev-rt.jar!/"/>
+         </archives>
+         <selectionMode>2</selectionMode>
+      </selectedArchives>
+   </cdaSettings>
+   <jarURL path="deploy/NeuralNetApplet.jar"/>
+   <profileDeps/>
+   <selectedProjectFiles>
+      <autoInclude>true</autoInclude>
+      <deploySourceAs>0</deploySourceAs>
+      <files>
+         <Item path="public_html/Test.html"/>
+      </files>
+      <selectionFilters/>
+   </selectedProjectFiles>
+</simple-archive-deployment>

@@ -1,0 +1,104 @@
+<!doctype html PUBLIC "-//W3C//DTD html 4.0 transitional//EN">
+<html>
+<head>
+<title>Neural Network Applet</title>
+</head>
+<body bgcolor="#000000" text="#FFFFFF">
+<p align="center"><font size="6"><em><strong>Neural Network Applet</strong></em></font></p>
+<p align="center"><font size="4">Demonstrating Supervised Machine Learning of 
+  Network Intrusion Signatures</font></p>
+<p align="center"><font color="#999999">Developed by John Sheaffer for CISC 670 
+  (Fall 2002) </font></p>
+<a href="#applet">Go to Applet</a> 
+<h3>Neural Network Applet Overview:</h3>
+<p>This applet demonstrates the technique of Supervised Machine Learning using 
+  a Neural Network in the context of Intrusion Detection Systems (IDS).</p>
+<p>The applet analyzes network connection records using a Multi-layer Feed-forward 
+  Neural Network. First the network is trained using samples and their expected 
+  output through the Back-Propagation learning algorithm. Then the trained network 
+  is tested on a different set of samples and the expected vs. actual output is 
+  compared to determine the network's accuracy. The network's output is either 
+  0.0 for a normal connection, or 1.0 for a attack related connection.</p>
+<p>The sample data was obtained from the University of California, Irvine, <a href="http://kdd.ics.uci.edu">Knowledge 
+  Discovery Database</a>. Each sample is a connection record stored in a text 
+  file as a comma-separated string of connection characteristics. This list of 
+  <a href="http://kdd.ics.uci.edu/databases/kddcup99/task.html">Derived Features</a> 
+  describes the connection characteristics each record includes. The data used 
+  by this applet is the first 100,000 records of the data in the <a href="http://kdd.ics.uci.edu/databases/kddcup99/corrected.gz">corrected.gz</a> 
+  file in the UCI-KDD archive.</p>
+<a href="#applet">Go to Applet</a> 
+<h3>How to use the applet:</h3>
+<p>All you have to do is press the &quot;Train and Test Neural Net&quot; button. 
+  You may wish to change any of the settings in the &quot;Sample Data Settings&quot; 
+  or &quot;Neural Network Configuration&quot; panels.</p>
+When you click the &quot;Train and Test Neural Net&quot; button, the following 
+happens: 
+<ol>
+  <li>The applet connects to the scis.nova.edu server and opens a stream to the 
+    data file.</li>
+  <li>The applet reads the first <em>n</em> records from the data file(where <em>n</em> 
+  is the value in the &quot;Number of samples&quot; setting) and determines the 
+  maximum value of each attribute of the record.</li> 
+  <li>The applet reads the data file a second time and loads the data into memory, 
+    normalizing each records attribute value between 0.0 and 1.0 inclusive.</li>
+  <li>The applet randomly extracts a percentage of the sample data as test data 
+    (to be use to compare the expected vs. actual output). This leaves two data 
+    sets, Training and Test, who's sum is the value specified in the &quot;Number 
+    of samples&quot; setting. The test set is removed from the training set so 
+    the network can't simply &quot;memorize&quot; the output to the test samples.</li>
+  <li>The applet builds the Neural Network with 42 input neurons, 1 output neuron, 
+    and as many hidden layers and neurons as specified in the &quot;Neural Network 
+    Configuration&quot; panel.</li>
+  <li>The applet trains the Neural Network by executing the network and adjusting 
+    the connection weights using the Back-Propagation learning algorithm.</li>
+  <li>The applet repeats the previous step as many times as listed in the &quot;Number 
+    of training epochs(iterations)&quot;.</li>
+  <li>The applet executes the Neural Network on the Test set and computes the 
+    percentage of correct outputs. The tolerance for accuracy is 0.1, and the 
+    output can range from 0.0 (normal connection) to 1.0 (attack connection). 
+    Therefore an attack must output between 0.9 and 1.0, and an normal connection 
+    must output between 0.0 and 0.1.</li>
+</ol>
+<p>Training a Neural Network is computationally intensive. I received tolerable 
+  run completion times using samples sets of up to 30,000 and 10 epochs, on a 
+  1 GHz computer. On slower computers, the runs may take considerably longer.</p>
+<p>To cancel a run, simply press the &quot;Cancel Run&quot; button. All of the 
+  loading and network activities are launched in separate threads. These threads 
+  periodically check to see if the user has pressed the &quot;Cancel Run&quot; 
+  button.</p>
+<a href="#applet">Go to Applet</a> 
+<h3>Running Stand Alone:</h3>
+<p>You can also run the applet stand alone. To do this you must have JRE 1.3.1 
+  or higher installed on your computer.</p>
+<ol>
+  <li>First, download the applet JAR file and the data file: 
+    <ul>
+      <li><a href="http://scis.nova.edu/%7Esheaffer/NeuralNetApplet.jar">NeuralNetApplet.jar</a></li>
+      <li><a href="http://scis.nova.edu/%7Esheaffer/corrected.100.zip">corrected.100.zip</a></li>
+    </ul>
+  </li>
+  <li>Place both files in the same directory and run the applet with: 
+    <pre>java -jar NeuralNetApplet.jar corrected.100.zip</pre>
+  </li>
+</ol>
+<p>Note: If you don't specify the data file as the first argument, the applet 
+  will attempt to access the data file at "http://scis.nova.edu/~sheaffer/corrected.100.zip"</p>
+<a href="#applet">Go to Applet</a> 
+<p>&nbsp;</p>
+<a name="Applet"></a>
+<table width="100%" border="0" align="center">
+  <tr> 
+    <td align="center"> <p> 
+        <object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"  codebase="http://java.sun.com/products/plugin/1.2/jinstall-12-win32.cab#Version=1,2,0,0" width = 650 height = 600 align="baseline">
+          <param name = CODE value = "NeuralNet.NeuralNetApplet" >
+          <param name = ARCHIVE value = "NeuralNetApplet.jar" >
+          <param name="type" value="application/x-java-applet;version=1.2">
+          <embed width = 650 height = 600 align="baseline" type="application/x-java-applet;version=1.2" java_code = "NeuralNet.NeuralNetApplet" java_archive = "NeuralNetApplet.jar" pluginspage="http://java.sun.com/products/plugin/1.2/plugin-install.html"> 
+          </embed> </object>
+      </p></td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+</body>
+</html>
