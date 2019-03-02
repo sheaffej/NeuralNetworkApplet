@@ -1,6 +1,6 @@
 # NeuralNetworkApplet
 
-###Demonstrating Supervised Machine Learning of Network Intrusion Signatures
+### Demonstrating Supervised Machine Learning of Network Intrusion Signatures
 
 *Developed by John Sheaffer for CISC 670 (Fall 2002), [Nova Southeastern University](https://www.nova.edu/), M.S. of Computer Science program*
 
@@ -11,14 +11,14 @@
 ---
 
 
-###Neural Network Applet Overview:
+### Neural Network Applet Overview:
 This applet demonstrates the technique of Supervised Machine Learning using a Neural Network in the context of Intrusion Detection Systems (IDS).
 
 The applet analyzes network connection records using a Multi-layer Feed-forward Neural Network. First the network is trained using samples and their expected output through the Back-Propagation learning algorithm. Then the trained network is tested on a different set of samples and the expected vs. actual output is compared to determine the network's accuracy. The network's output is either 0.0 for a normal connection, or 1.0 for a attack related connection.
 
 The sample data was obtained from the University of California, Irvine, [Knowledge Discovery Database](http://kdd.ics.uci.edu/). Each sample is a connection record stored in a text file as a comma-separated string of connection characteristics. This list of [Derived Features](http://kdd.ics.uci.edu/databases/kddcup99/task.html) describes the connection characteristics each record includes. The data used by this applet is the first 100,000 records of the data in the [corrected.gz](http://kdd.ics.uci.edu/databases/kddcup99/corrected.gz) file in the UCI-KDD archive.
 
-###How to use the applet:
+### How to use the applet:
 All you have to do is press the "Train and Test Neural Net" button. You may wish to change any of the settings in the "Sample Data Settings" or "Neural Network Configuration" panels.
 
 When you click the "Train and Test Neural Net" button, the following happens:
@@ -36,7 +36,7 @@ Training a Neural Network is computationally intensive. I received tolerable run
 
 To cancel a run, simply press the "Cancel Run" button. All of the loading and network activities are launched in separate threads. These threads periodically check to see if the user has pressed the "Cancel Run" button.
 
-###Running Stand Alone:
+### Running Stand Alone:
 You can also run the applet stand alone. To do this you must have JRE 1.3.1 or higher installed on your computer.
 
 1. First, download the applet JAR file and the data file:
