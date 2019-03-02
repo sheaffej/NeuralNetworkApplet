@@ -4,11 +4,11 @@
 
 *Developed by John Sheaffer for CISC 670 (Fall 2002), [Nova Southeastern University](https://www.nova.edu/), M.S. of Computer Science program*
 
--
+---
 
 **Note:** This code is currently not working since it refers to a dataset location that no longer exists. I intend to update the code so it works again.
 
--
+---
 
 
 ###Neural Network Applet Overview:
